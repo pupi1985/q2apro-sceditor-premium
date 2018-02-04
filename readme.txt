@@ -1,4 +1,4 @@
-# Premium Plugin: SCEditor
+# Free Premium Plugin: SCEditor
 
     "There are so many heavy editors out there, they take ages to load, provide clumsy user experience... With SCEditor everything gets a breeze. Lightweight, fast as hell, easy to customize. The perfect solution for you and your users." 
 
@@ -41,5 +41,4 @@
 
 # Copyright
 
-	Copyright © q2apro.com - All rights reserved
-	A redistribution of this code is not permitted.
+All code herein is OpenSource GPL3. Feel free to build upon it and share with the world.
