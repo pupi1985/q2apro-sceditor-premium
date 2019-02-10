@@ -1,21 +1,4 @@
 <?php
-
-/*
-	Plugin Name: SCEditor
-	Plugin URI: http://www.q2apro.com/plugins/sceditor
-	Plugin Description: Provides the SCEditor as WYSIWYG rich text editor for your question2answer forum.
-	Plugin Version: 1.3
-	Plugin Date: 2016-02-17
-	Plugin Author: q2apro.com
-	Plugin Author URI: http://www.q2apro.com/
-	Plugin Minimum Question2Answer Version: 1.5
-	Plugin Update Check URI: http://www.q2apro.com/pluginupdate?id=90
-	
-	Licence: Copyright © q2apro.com - All rights reserved
-	
-*/
-
-
 	if (!defined('QA_VERSION')) { // don't allow this page to be requested directly from browser
 		header('Location: ../../');
 		exit;
@@ -23,7 +6,7 @@
 
 	// editor module
 	qa_register_plugin_module('editor', 'q2apro-sceditor-editor.php', 'qa_sceditor', 'SCEditor');
-	
+
 	// upload page
 	qa_register_plugin_module('page', 'q2apro-sceditor-upload.php', 'qa_sceditor_upload', 'SCEditor Upload');
 
@@ -35,9 +18,9 @@
 
 	// core function overrides to allow iframe
 	qa_register_plugin_overrides('q2apro-sceditor-overrides.php');
-	
+
 	/* custom function */
-	
+
 	// check if GIF is animated, credits go to http://php.net/manual/en/function.imagecreatefromgif.php#104473
 	function gif_is_animated($filename) {
 		if(!($fh = @fopen($filename, 'rb')))
@@ -58,7 +41,3 @@
 		fclose($fh);
 		return $count > 1;
 	}
-
-/*
-	Omit PHP closing tag to help avoid accidental output
-*/
