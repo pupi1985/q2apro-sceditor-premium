@@ -455,7 +455,7 @@
 						autoExpand: ".$editorexpand.",
 						width: ".$editorwidth.",
 						height: ".$editorheight.",
-						emoticonsRoot: '".$this->urltoroot."',
+						emoticonsRoot: '" . qa_path_absolute(sprintf('%s/%s/', basename(QA_PLUGIN_DIR), basename(__DIR__))) . "',
 						emoticonsEnabled: ".$editoremoticons.",
 						rtl: ".$editorrtl.",
 						autoUpdate: false,
